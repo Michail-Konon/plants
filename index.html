@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Plants</title>
 </head>
-<body>
+<body class="body">
    
 <header class="header">
   <div class="header-wrapper">
@@ -35,14 +35,14 @@
   </div>
 </header>
 
-<main>
+<main class="main">
     <section class="welcome">
         <div class="welcome-wrapper">
             <img class="welcome_leaves" src="./assets/img/leafs.png" alt="">
             <div class="welcome_block">
-                <div class="welcome_block-title">
+                <h1 class="welcome_block-title">
                     We grow plants and give you oxygen
-                </div>
+                </h1>
                 <div class="welcome_block-text">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
@@ -54,10 +54,16 @@
 
     <section class="about">
         <div class="about-wrapper">
-            <div class="about_plant"></div>
+            <img class="about_plant" src="./assets/img/plant_1.png" alt="">
             <div class="about_block">
-                <div class="about_block-title"></div>
-                <div class="about_block-text"></div>
+                <h2 class="about_block-title">We are professional experienced gardeners</h2>
+                <div class="about_block-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic typesetting, 
+                    remaining essentially unchanged. 
+                </div>
             </div>
         </div>
     </section>
@@ -126,22 +132,31 @@
 
     <section class="prices">
         <div class="prices-wrapper">
-            <div class="prices_title"></div>
-            <div class="prices_options"></div>
-            <div class="prices_text-block">
-                <div class="prices_block-title">Our best gardeners are ready to help you</div>
-                <button class="btn">Contact us</button>
-                <img class="small_leaves" src="./assets/img/leafs_small.png" alt="">
+            <h2 class="prices_title">Prices</h2>
+            <div class="prices_container">
+                <div class="prices_dropdown-block">
+                    <div class="prices_dropdown">Basics</div>
+                    <div class="prices_dropdown">Standard</div>
+                    <div class="prices_dropdown">Pro care</div>
+                </div>
+                <div class="prices_text-block">
+                    <div class="prices_block-title">Our best gardeners are ready to help you</div>
+                    <button class="btn">Contact us</button>
+                    <img class="small_leaves" src="./assets/img/leafs_small.png" alt="">
+                </div>
             </div>
         </div>
     </section>
 
     <section class="contacts">
         <div class="contacts-wrapper">
-            <h2 class="contacts_title"></h2>
-            <div class="contacts_block">
-                <img class="contacts_img" src="./assets/img/stupid_woman.png" alt="Woman">
-                <div class="contacts_menu"></div>
+            <h2 class="contacts_title">Contact us</h2>
+            <div class="contacts_container">
+                <div class="contacts_menu">Dropdown menu here</div>
+                <div class="contacts_block">
+                    <img class="contacts_img" src="./assets/img/stupid_woman.png" alt="Woman">
+                    <div class="contacts_menu"></div>
+                </div>
             </div>
         </div>
     </section>

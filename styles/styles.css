@@ -38,7 +38,7 @@ a.active{
     max-width: 1440px;
 }
 
-.btn{
+.btn {
     border: 2px solid #E06733;
     border-radius: 10px;
     background-color: transparent;
@@ -48,8 +48,9 @@ a.active{
     font-size: 16px;
     line-height: 20px;
     cursor: pointer;
-    padding: 14px 27px;
+    padding: 10px 26px;
     text-transform: uppercase;
+    margin-top: 40px;
 }
 
 
@@ -157,17 +158,22 @@ a.active{
 
 .welcome{
     background: #EDF2EC;
+    padding-bottom: 57px;
 }
 
 .welcome_block {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 7px;
     align-items: flex-start;
+    margin-top: 10px;
 }
 
-.welcome-wrapper{
+.welcome-wrapper {
     display: flex;
+    margin: 0px 100px;
+    padding-top: 50px;
+    gap: 220px;
 }
 
 .welcome_block-title{
@@ -186,6 +192,7 @@ a.active{
     font-size: 20px;
     line-height: 35px;
     color: #636060;
+    margin-right: 10px;
 }
 
 /*About sec*/

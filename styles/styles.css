@@ -200,6 +200,12 @@ a.active{
 .about-wrapper {
     display: flex;
     flex-direction: row-reverse;
+    margin: 129px 110px 94px;
+    gap: 153px;
+}
+
+.about_plant{
+    margin-top: -35px;
 }
 
 .about_block-title{
@@ -218,6 +224,7 @@ a.active{
     font-size: 20px;
     line-height: 30px;
     color: #636060;
+    margin-top: 38px;
 }
 
 /*Service sec*/

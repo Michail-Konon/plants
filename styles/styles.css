@@ -6,7 +6,31 @@
 
 #EDF2EC - Bg colour
 #010201 - Links nav
+
+font-family: 'Inika', serif;
+font-family: 'Inter', sans-serif;
 */
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+a:hover{
+    color: #717171;
+}
+
+a:active{
+    color: #E06733;
+}
+
+a.active{
+    color: #E06733;
+}
 
 .body{
     margin: 0 auto;
@@ -17,6 +41,79 @@
 .btn{
     border: 1px solid #E06733;
     border-radius: 2px;
+    background-color: transparent;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+
+.btn:hover{
+    color: white;
+    background-color: #E06733;
+}
+
+.btn_set{
+    border: 1px solid #E06733;
+    border-radius: 1px;
+    background-color: transparent;
+    color: #E06733;
+    cursor: pointer;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.btn_set:hover{
+    color: white;
+    background-color: #E06733;
+}
+
+.btn_contact{
+
+    border: 1px solid #E06733;
+    border-radius: 1px;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #E06733;
+}
+
+.btn_contact:hover{
+    background-color: #E06733;
+    color: white;
+}
+
+.card_title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #E06733;
+}
+
+.card_text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #717171;
+}
+
+.highlight{
+    color: #499A18;
 }
 
 /*Header*/
@@ -31,6 +128,14 @@
     height: 134px;
     align-items: center;
     margin: 0 10px;
+}
+
+.navigation{
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;
 }
 
 .navigation_list{
@@ -57,11 +162,47 @@
     display: flex;
 }
 
+.welcome_block-title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    color: #717171;
+}
+
+.welcome_block-text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    color: #636060;
+}
+
 /*About sec*/
 
 .about-wrapper {
     display: flex;
     flex-direction: row-reverse;
+}
+
+.about_block-title{
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #E06733;
+}
+
+.about_block-text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #636060;
 }
 
 /*Service sec*/
@@ -73,6 +214,15 @@
 .service_cards-block{
     display: flex;
     flex-wrap: wrap;
+}
+
+.service_controls-title{
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
 }
 
 /*Prices sec*/
@@ -102,6 +252,41 @@
     flex-direction: column;
 }
 
+.prices_title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    
+    color: #000000;
+}
+
+.prices_block-title{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 50px;
+/* or 125% */
+
+
+
+color: #000000;
+}
+
+.prices_dropdown{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    /* or 100% */
+    
+    
+    color: #000000;
+}
+
 /*Contacts sec*/
 
 .contacts{
@@ -118,6 +303,29 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+}
+
+.contacts_title{
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    
+    color: #499A18;
+}
+
+.contacts_menu{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    /* identical to box height, or 200% */
+    
+    letter-spacing: 0.05em;
+    
+    color: #717171;
 }
 
 /*Footer*/
@@ -139,11 +347,15 @@
 }
 
 .footer_info-item{
-
-}
-
-.footer_rs{
-
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    /* identical to box height, or 250% */
+    
+    
+    color: #000000;
 }
 
 .footer_socials{

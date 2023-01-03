@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Plants</title>
 </head>
@@ -16,7 +19,7 @@
     <nav class="navigation">
         <ul class="navigation_list">
             <li class="navigation_item">
-                <a href="" class="navigation_link">Home</a>
+                <a href="" class="navigation_link active">Home</a>
             </li>
             <li class="navigation_item">
                 <a href="" class="navigation_link">About us</a>
@@ -41,7 +44,7 @@
             <img class="welcome_leaves" src="./assets/img/leafs.png" alt="">
             <div class="welcome_block">
                 <h1 class="welcome_block-title">
-                    We grow plants and give you oxygen
+                    We grow <span class="highlight">plants</span> and give you oxygen
                 </h1>
                 <div class="welcome_block-text">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -56,7 +59,7 @@
         <div class="about-wrapper">
             <img class="about_plant" src="./assets/img/plant_1.png" alt="">
             <div class="about_block">
-                <h2 class="about_block-title">We are professional experienced gardeners</h2>
+                <h2 class="about_block-title"><span class="highlight">We are</span> professional experienced <span class="highlight">gardeners</span></h2>
                 <div class="about_block-text">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -73,9 +76,9 @@
             <div class="service_controls">
                 <div class="service_controls-title">Service and our projects</div>
                 <div class="service_controls-btn">
-                    <button class="btn">Gardens</button>
-                    <button class="btn">Lawn</button>
-                    <button class="btn">Planting</button>
+                    <button class="btn_set">Gardens</button>
+                    <button class="btn_set">Lawn</button>
+                    <button class="btn_set">Planting</button>
                 </div>
             </div>
             <div class="service_cards-block">
@@ -140,8 +143,8 @@
                     <div class="prices_dropdown">Pro care</div>
                 </div>
                 <div class="prices_text-block">
-                    <div class="prices_block-title">Our best gardeners are ready to help you</div>
-                    <button class="btn">Contact us</button>
+                    <div class="prices_block-title">Our best <span class="highlight">gardeners</span> are ready to help you</div>
+                    <button class="btn_contact">Contact us</button>
                     <img class="small_leaves" src="./assets/img/leafs_small.png" alt="">
                 </div>
             </div>
@@ -169,7 +172,7 @@
             <div class="footer_info-item">2022/2023</div>
             <div class="footer_info-item">Github</div>
         </div>
-        <div class="footer_rs">Rolling Scopes School</div>
+        <div class="footer_info-item">Rolling Scopes School</div>
         <div class="footer_socials">
             <ul class="footer_list">
                 <li class="footer_item">

@@ -131,7 +131,11 @@ a.active{
     justify-content: space-between;
     height: 134px;
     align-items: center;
-    margin: 0 10px;
+    margin: 0 110px;
+}
+
+.header_img{
+    margin-top: -7px;
 }
 
 .navigation{
@@ -145,7 +149,7 @@ a.active{
 .navigation_list{
     display: flex;
     list-style-type: none;
-    gap: 30px;
+    gap: 47px;
 }
 
 

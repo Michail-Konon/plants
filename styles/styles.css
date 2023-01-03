@@ -59,9 +59,9 @@ a.active{
     background-color: #E06733;
 }
 
-.btn_set{
+.btn_set {
     border: 1px solid #E06733;
-    border-radius: 1px;
+    border-radius: 5px;
     background-color: transparent;
     color: #E06733;
     cursor: pointer;
@@ -70,7 +70,7 @@ a.active{
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
-    padding: 12px 40px;
+    padding: 11px 41px;
 }
 
 .btn_set:hover{
@@ -99,22 +99,24 @@ a.active{
     color: white;
 }
 
-.card_title{
+.card_title {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
     color: #E06733;
+    margin: 6px 0 0px;
 }
 
-.card_text{
+.card_text {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     color: #717171;
+    margin: 14px 0 0;
 }
 
 .highlight{
@@ -229,14 +231,59 @@ a.active{
 
 /*Service sec*/
 
-.service{
+.service {
     background: #EDF2EC;
+    padding: 40px 110px 158px;
 }
 
-.service_cards-block{
+.service-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+/*
+.service_card{
+    border: 1px solid #ff0000;   TO DO Border
+    border-radius: 20px;
+}
+*/
+
+.service_cards-block {
     display: flex;
     flex-wrap: wrap;
+    row-gap: 90px;
+    column-gap: 115px;
 }
+
+.service_controls {
+    display: flex;
+    align-items: center;
+}
+
+.service_controls-btn {
+    gap: 37px;
+    display: flex;
+    margin: 3px 9px 0px 2px;
+}
+
+/*Btn correction start*/
+
+.correction_g {
+    margin-left: 0px;
+    padding-right: 44px;
+    padding-left: 40px;
+}
+
+.correction_l {
+    padding: 11px 54px;
+}
+
+.correction_p {
+    padding-left: 40px;
+}
+
+/*Btn correction end*/
 
 .service_controls-title{
     font-family: 'Inika';
@@ -245,6 +292,14 @@ a.active{
     font-size: 40px;
     line-height: 52px;
     color: #499A18;
+
+    width: 445px;
+}
+
+.card_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*Prices sec*/

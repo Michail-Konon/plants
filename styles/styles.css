@@ -312,16 +312,16 @@ a.active{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 39px 111px 1px;
+    margin: 39px 111px 1px 109px;
 }
 
 .prices_container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
+    gap: 59px;
 }
-
 .prices_text-block {
     display: flex;
     flex-direction: column;
@@ -330,19 +330,31 @@ a.active{
 }
 
 .prices_dropdown-block {
-    background-color: #717171;
     display: flex;
     flex-direction: column;
+    border: 1px solid #717171;
+    border-radius: 20px;
+    gap: 30px;
+    width: 331px;
+    height: 282px;
+    justify-content: center;
+    align-items: center;
 }
 
-.prices_title{
+.prices_title {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
-    margin: 0 auto;
+    margin: 0 0px;
     color: #000000;
+    place-self: baseline;
+}
+
+.prices_ico {
+    margin-right: 40px;
+    margin-top: 2px;
 }
 
 .prices_block-title{
@@ -364,8 +376,19 @@ a.active{
     line-height: 20px;
     /* or 100% */
     
-    
+    margin-left: 40px;
     color: #000000;
+}
+
+.prices_dropdown-btn {
+    background-color: #EDF2EC;
+    width: 250px;
+    height: 50px;
+    border: 1px solid #EDF2EC;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .small_leaves{
@@ -404,17 +427,39 @@ a.active{
     margin: 60px 0px 0px -7px;
 }
 
-.contacts_menu{
+.contacts_menu {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 40px;
-    /* identical to box height, or 200% */
-    
+    align-self: center;
     letter-spacing: 0.05em;
-    
     color: #717171;
+    width: 450px;
+    height: 50px;
+    background-color: #D6E7D2;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 260px;
+    box-shadow:  #717171;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contacts_menu-select{
+    margin-left: 20px;
+}
+
+.contacts_ico {
+    margin-right: 34px;
+    margin-top: 3px;
+}
+
+.ico_invert{
+    -webkit-filter: invert(20%); /* safari 6.0 - 9.0 */
+    filter: invert(20%);
 }
 
 /*Footer*/

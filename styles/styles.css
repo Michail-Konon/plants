@@ -22,6 +22,7 @@ a:visited{
 
 a:hover{
     color: #717171;
+    transition: 0.5s;
 }
 
 a:active{
@@ -51,12 +52,14 @@ a.active{
     padding: 10px 26px;
     text-transform: uppercase;
     margin-top: 40px;
+    transition: 0.5s;
 }
 
 
 .btn:hover{
     color: white;
     background-color: #E06733;
+    transition: 0.5s
 }
 
 .btn_set {
@@ -71,15 +74,17 @@ a.active{
     font-size: 20px;
     line-height: 26px;
     padding: 11px 41px;
+    transition: 0.5s;
 }
 
 .btn_set:hover{
     color: white;
     background-color: #E06733;
+    transition: 0.5s
 }
 
 .btn_contact{
-
+    transition: 0.5s;
     border: 1px solid #E06733;
     border-radius: 5px;
     background-color: transparent;
@@ -97,6 +102,7 @@ a.active{
 .btn_contact:hover{
     background-color: #E06733;
     color: white;
+    transition: 0.5s
 }
 
 .card_title {
@@ -121,6 +127,20 @@ a.active{
 
 .highlight{
     color: #499A18;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.social_ico{
+    transition: 0.5s;
+}
+
+.social_ico:hover{
+    transition: 0.5s;
+    filter: invert(30%);
+    transform: scale(1.2)
 }
 
 /*Header*/

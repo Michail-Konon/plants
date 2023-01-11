@@ -255,13 +255,13 @@ html {
 
 .service {
     background: #EDF2EC;
-    padding: 40px 110px 158px;
+    padding: 7px 110px 126px;
 }
 
 .service-wrapper{
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 47px;
 }
 
 /*

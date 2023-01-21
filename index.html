@@ -35,12 +35,36 @@
                 <a href="#contacts" class="navigation_link">Contacts</a>
             </li>
         </ul>
+        <div class="burger"><img class="burger_img" id="burger-menu" src="./assets/ico/burger_ico.svg" alt="burger"></div>
+        <div class="overlay" data-close="true"></div>
     </nav>
   </div>
 </header>
 
 <main class="main">
     <section class="welcome" id="welcome">
+
+        <nav class="burger_navigation action">
+            <ul class="burger_navigation_list">
+                <li class="burger_navigation_item">
+                    <a href="#welcome" class="burger_navigation_link">Home</a>
+                </li>
+                <li class="burger_navigation_item">
+                    <a href="#about" class="burger_navigation_link">About us</a>
+                </li>
+                <li class="burger_navigation_item">
+                    <a href="#service" class="burger_navigation_link">Service</a>
+                </li>
+                <li class="burger_navigation_item">
+                    <a href="#prices" class="burger_navigation_link">Price</a>
+                </li>
+                <li class="burger_navigation_item">
+                    <a href="#contacts" class="burger_navigation_link">Contacts</a>
+                </li>
+            </ul>
+            <div class="cross"><img class="cross_img" src="./assets/ico/cross.svg" alt="cross"></div>
+        </nav>
+
         <div class="welcome-wrapper">
             <img class="welcome_leaves" src="./assets/img/leafs.png" alt="">
             <div class="welcome_block">
@@ -84,7 +108,10 @@
             </div>
             <div class="service_cards-block">
                 <div class="service_card">
-                    <img class="card-img" src="./assets/img/card_1.png" alt="card image">
+                    <picture class="card-img">
+                        <source media="(max-width:770px)" srcset="./assets/img/card_1_improve.png">
+                        <img class="card-img" src="./assets/img/card_1.png" alt="card image">
+                    </picture>
                     <div class="card_info">
                         <p class="card_title">Garden care</p>
                         <p class="card_text">Lorem Ipsum has been the industry</p>
@@ -92,7 +119,10 @@
                 </div>
 
                 <div class="service_card">
-                    <img class="card-img" src="./assets/img/card_2.png" alt="card image">
+                    <picture class="card-img">
+                        <source media="(max-width:770px)" srcset="./assets/img/card_2_improve.png">
+                        <img class="card-img" src="./assets/img/card_2.png" alt="card image">
+                    </picture>
                     <div class="card_info">
                         <p class="card_title">Planting</p>
                         <p class="card_text">Lorem Ipsum has been the industry</p>
@@ -100,7 +130,10 @@
                 </div>
 
                 <div class="service_card">
-                    <img class="card-img" src="./assets/img/card_3.png" alt="card image">
+                    <picture class="card-img">
+                        <source media="(max-width:770px)" srcset="./assets/img/card_3_improve.png">
+                        <img class="card-img" src="./assets/img/card_3.png" alt="card image">
+                    </picture>
                     <div class="card_info">
                         <p class="card_title">Lawn care</p>
                         <p class="card_text">Lorem Ipsum has been the industry</p>
@@ -108,7 +141,10 @@
                 </div>
 
                 <div class="service_card">
-                    <img class="card-img" src="./assets/img/card_4.png" alt="card image">
+                    <picture class="card-img">
+                        <source media="(max-width:770px)" srcset="./assets/img/card_4_improve.png">
+                        <img class="card-img" src="./assets/img/card_4.png" alt="card image">
+                    </picture>
                     <div class="card_info">
                         <p class="card_title">Planting</p>
                         <p class="card_text">Lorem Ipsum has been the industry</p>
@@ -116,7 +152,10 @@
                 </div>
 
                 <div class="service_card">
-                    <img class="card-img" src="./assets/img/card_5.png" alt="card image">
+                    <picture class="card-img">
+                        <source media="(max-width:770px)" srcset="./assets/img/card_5_improve.png">
+                        <img class="card-img" src="./assets/img/card_5.png" alt="card image">
+                    </picture>
                     <div class="card_info">
                         <p class="card_title">Garden care</p>
                         <p class="card_text">Lorem Ipsum has been the industry</p>
@@ -124,7 +163,10 @@
                 </div>
 
                 <div class="service_card">
-                    <img class="card-img" src="./assets/img/card_6.png" alt="card image">
+                    <picture class="card-img">
+                        <source media="(max-width:770px)" srcset="./assets/img/card_6_improve.png">
+                        <img class="card-img" src="./assets/img/card_6.png" alt="card image">
+                    </picture>
                     <div class="card_info">
                         <p class="card_title">Planting</p>
                         <p class="card_text">Lorem Ipsum has been the industry</p>
@@ -213,4 +255,5 @@
 </footer>
 
 </body>
+<script src="./script/script.js" defer></script>
 </html>

@@ -35,13 +35,36 @@
                 <a href="#contacts" class="navigation_link">Contacts</a>
             </li>
         </ul>
-        <div class="burger"><img src="./assets/ico/burger_ico.svg" alt="burger"></div>
+        <div class="burger"><img class="burger_img" id="burger-menu" src="./assets/ico/burger_ico.svg" alt="burger"></div>
+        <div class="overlay" data-close="true"></div>
     </nav>
   </div>
 </header>
 
 <main class="main">
     <section class="welcome" id="welcome">
+
+        <nav class="burger_navigation action">
+            <ul class="burger_navigation_list">
+                <li class="burger_navigation_item">
+                    <a href="#welcome" class="burger_navigation_link">Home</a>
+                </li>
+                <li class="burger_navigation_item">
+                    <a href="#about" class="burger_navigation_link">About us</a>
+                </li>
+                <li class="burger_navigation_item">
+                    <a href="#service" class="burger_navigation_link">Service</a>
+                </li>
+                <li class="burger_navigation_item">
+                    <a href="#prices" class="burger_navigation_link">Price</a>
+                </li>
+                <li class="burger_navigation_item">
+                    <a href="#contacts" class="burger_navigation_link">Contacts</a>
+                </li>
+            </ul>
+            <div class="cross"><img class="cross_img" src="./assets/ico/cross.svg" alt="cross"></div>
+        </nav>
+
         <div class="welcome-wrapper">
             <img class="welcome_leaves" src="./assets/img/leafs.png" alt="">
             <div class="welcome_block">
@@ -232,4 +255,5 @@
 </footer>
 
 </body>
+<script src="./script/script.js" defer></script>
 </html>

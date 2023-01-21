@@ -106,9 +106,96 @@ a.active{
     transition: 0.5s
 }
 
+/* burger menu start*/
+
+.action {
+    margin-left: -300px
+}
+
 .burger {
     display: none;
 }
+
+.burger_navigation {
+    transition: 0.5s;
+    background: #DCE9D9;
+    width: 180px;
+    position: absolute;
+    border: 1px #E06733 solid;
+    z-index: 2;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.burger_navigation_list{
+    list-style: none;
+}
+
+.burger_navigation_item {
+    transition: 0.5s;
+}
+
+.burger_navigation_item:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.burger_img {
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.burger_img:hover {
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+.burger_navigation_link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+}
+
+.cross {
+    width: 20px;
+    height: 20px;
+    margin-top: 27px;
+    background: white;
+}
+
+.cross_img {
+    transition: 0.0s;
+}
+
+.cross_img:hover {
+    transition: 0.5s;
+    transform: scale(1.2);
+    transform: rotateZ(180deg);
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(41, 41, 41, .6);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.show {
+    display: block;
+}
+
+/* burger menu end*/
 
 .card_title {
     font-family: 'Inter';
@@ -136,6 +223,10 @@ a.active{
 
 html {
     scroll-behavior: smooth;
+}
+
+.hide {
+    display: none;
 }
 
 .social_ico{
@@ -245,6 +336,8 @@ html {
 .welcome{
     background: #EDF2EC;
     padding-bottom: 57px;
+    overflow: hidden;
+    position: relative;
 }
 
 .welcome_block {

@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="./assets/ico/plants_icon.ico">
     <title>Plants</title>
 </head>
 <body class="body">
@@ -19,27 +20,51 @@
     <nav class="navigation">
         <ul class="navigation_list">
             <li class="navigation_item">
-                <a href="" class="navigation_link active">Home</a>
+                <a href="#welcome" class="navigation_link active">Home</a>
             </li>
             <li class="navigation_item">
-                <a href="" class="navigation_link">About us</a>
+                <a href="#about" class="navigation_link">About us</a>
             </li>
             <li class="navigation_item">
-                <a href="" class="navigation_link">Service</a>
+                <a href="#service" class="navigation_link">Service</a>
             </li>
             <li class="navigation_item">
-                <a href="" class="navigation_link">Price</a>
+                <a href="#prices" class="navigation_link">Price</a>
             </li>
             <li class="navigation_item">
-                <a href="" class="navigation_link">Contacts</a>
+                <a href="#contacts" class="navigation_link">Contacts</a>
             </li>
         </ul>
+        <div class="burger"><img class="burger_img" id="burger-menu" src="./assets/ico/burger_ico.svg" alt="burger"></div>
+        <div class="overlay" data-close="true"></div>
     </nav>
   </div>
 </header>
 
 <main class="main">
-    <section class="welcome">
+    <section class="welcome" id="welcome">
+
+        <nav class="burger_navigation action">
+            <ul class="burger_navigation_list">
+                <li class="burger_navigation_item">
+                    <a href="#welcome" class="burger_navigation_link">Home</a>
+                </li>
+                <li class="burger_navigation_item">
+                    <a href="#about" class="burger_navigation_link">About us</a>
+                </li>
+                <li class="burger_navigation_item">
+                    <a href="#service" class="burger_navigation_link">Service</a>
+                </li>
+                <li class="burger_navigation_item">
+                    <a href="#prices" class="burger_navigation_link">Price</a>
+                </li>
+                <li class="burger_navigation_item">
+                    <a href="#contacts" class="burger_navigation_link">Contacts</a>
+                </li>
+            </ul>
+            <div class="cross"><img class="cross_img" src="./assets/ico/cross.svg" alt="cross"></div>
+        </nav>
+
         <div class="welcome-wrapper">
             <img class="welcome_leaves" src="./assets/img/leafs.png" alt="">
             <div class="welcome_block">
@@ -55,7 +80,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-wrapper">
             <img class="about_plant" src="./assets/img/plant_1.png" alt="Plant should be here">
             <div class="about_block">
@@ -71,10 +96,10 @@
         </div>
     </section>
     
-    <section class="service">
+    <section class="service" id="service">
         <div class="service-wrapper">
             <div class="service_controls">
-                <div class="service_controls-title">Service and our projects</div>
+                <h2 class="service_controls-title">Service and our projects</h2>
                 <div class="service_controls-btn">
                     <button class="btn_set correction_g">Gardens</button>
                     <button class="btn_set correction_l">Lawn</button>
@@ -83,7 +108,10 @@
             </div>
             <div class="service_cards-block">
                 <div class="service_card">
-                    <img class="card-img" src="./assets/img/card_1.png" alt="card image">
+                    <picture class="card-img">
+                        <source media="(max-width:770px)" srcset="./assets/img/card_1_improve.png">
+                        <img class="card-img" src="./assets/img/card_1.png" alt="card image">
+                    </picture>
                     <div class="card_info">
                         <p class="card_title">Garden care</p>
                         <p class="card_text">Lorem Ipsum has been the industry</p>
@@ -91,7 +119,10 @@
                 </div>
 
                 <div class="service_card">
-                    <img class="card-img" src="./assets/img/card_2.png" alt="card image">
+                    <picture class="card-img">
+                        <source media="(max-width:770px)" srcset="./assets/img/card_2_improve.png">
+                        <img class="card-img" src="./assets/img/card_2.png" alt="card image">
+                    </picture>
                     <div class="card_info">
                         <p class="card_title">Planting</p>
                         <p class="card_text">Lorem Ipsum has been the industry</p>
@@ -99,7 +130,10 @@
                 </div>
 
                 <div class="service_card">
-                    <img class="card-img" src="./assets/img/card_3.png" alt="card image">
+                    <picture class="card-img">
+                        <source media="(max-width:770px)" srcset="./assets/img/card_3_improve.png">
+                        <img class="card-img" src="./assets/img/card_3.png" alt="card image">
+                    </picture>
                     <div class="card_info">
                         <p class="card_title">Lawn care</p>
                         <p class="card_text">Lorem Ipsum has been the industry</p>
@@ -107,7 +141,10 @@
                 </div>
 
                 <div class="service_card">
-                    <img class="card-img" src="./assets/img/card_4.png" alt="card image">
+                    <picture class="card-img">
+                        <source media="(max-width:770px)" srcset="./assets/img/card_4_improve.png">
+                        <img class="card-img" src="./assets/img/card_4.png" alt="card image">
+                    </picture>
                     <div class="card_info">
                         <p class="card_title">Planting</p>
                         <p class="card_text">Lorem Ipsum has been the industry</p>
@@ -115,7 +152,10 @@
                 </div>
 
                 <div class="service_card">
-                    <img class="card-img" src="./assets/img/card_5.png" alt="card image">
+                    <picture class="card-img">
+                        <source media="(max-width:770px)" srcset="./assets/img/card_5_improve.png">
+                        <img class="card-img" src="./assets/img/card_5.png" alt="card image">
+                    </picture>
                     <div class="card_info">
                         <p class="card_title">Garden care</p>
                         <p class="card_text">Lorem Ipsum has been the industry</p>
@@ -123,7 +163,10 @@
                 </div>
 
                 <div class="service_card">
-                    <img class="card-img" src="./assets/img/card_6.png" alt="card image">
+                    <picture class="card-img">
+                        <source media="(max-width:770px)" srcset="./assets/img/card_6_improve.png">
+                        <img class="card-img" src="./assets/img/card_6.png" alt="card image">
+                    </picture>
                     <div class="card_info">
                         <p class="card_title">Planting</p>
                         <p class="card_text">Lorem Ipsum has been the industry</p>
@@ -133,7 +176,7 @@
         </div>
     </section>
 
-    <section class="prices">
+    <section class="prices" id="prices">
         <div class="prices-wrapper">
             <div class="prices_container">
                 <h2 class="prices_title">Prices</h2>
@@ -160,7 +203,7 @@
         </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <div class="contacts-wrapper">
             <h2 class="contacts_title">Contact us</h2>
             <div class="contacts_container">
@@ -179,24 +222,32 @@
 <footer class="footer">
     <div class="footer-wrapper">
         <div class="footer_info">
-            <div class="footer_info-item">@</div>
-            <div class="footer_info-item">2022/2023</div>
-            <div class="footer_info-item">Github</div>
+            <div class="footer_info-item">©</div>
+            <div class="footer_info-item">2022</div>
+            <a href="https://github.com/Michail-Konon/" class="footer_info-item" target="_blank">Github</a>
         </div>
-        <div class="footer_info-item">Rolling Scopes School</div>
+        <a href="https://rs.school/" class="footer_info-item" target="_blank">Rolling Scopes School</a>
         <div class="footer_socials">
             <ul class="footer_list">
                 <li class="footer_item">
-                    <a href="" class="footer_link"><img src="./assets/ico/instagram.svg" alt=""></a>
+                    <a href="https://www.instagram.com/" class="footer_link" target="_blank">
+                        <img class="social_ico" src="./assets/ico/instagram.svg" alt="">
+                    </a>
                 </li>
                 <li class="footer_item">
-                    <a href="" class="footer_link"><img src="./assets/ico/facebook.svg" alt=""></a>
+                    <a href="https://www.facebook.com/" class="footer_link" target="_blank">
+                        <img class="social_ico" src="./assets/ico/facebook.svg" alt="">
+                    </a>
                 </li>
                 <li class="footer_item">
-                    <a href="" class="footer_link"><img src="./assets/ico/twitter.svg" alt=""></a>
+                    <a href="https://twitter.com/" class="footer_link" target="_blank">
+                        <img class="social_ico" src="./assets/ico/twitter.svg" alt="">
+                    </a>
                 </li>
                 <li class="footer_item">
-                    <a href="" class="footer_link"><img src="./assets/ico/pinterest.svg" alt=""></a>
+                    <a href="https://www.pinterest.com/" class="footer_link" target="_blank">
+                        <img class="social_ico" src="./assets/ico/pinterest.svg" alt="">
+                    </a>
                 </li>
             </ul>
         </div>
@@ -204,4 +255,5 @@
 </footer>
 
 </body>
+<script src="./script/script.js" defer></script>
 </html>

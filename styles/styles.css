@@ -11,6 +11,27 @@ font-family: 'Inika', serif;
 font-family: 'Inter', sans-serif;
 */
 
+/*Blur control start */
+
+.garden{
+    
+}
+
+.lawn{
+
+}
+
+.plant{
+
+}
+
+.blur{
+    filter: blur(5px);
+    transition: 0.5s;
+}
+
+/*Blur control end*/
+
 a:link{
     text-decoration: none;
     color: black;
@@ -40,6 +61,24 @@ a.active{
     max-width: 1440px;
 }
 
+.correction_g.activeBtn{
+    color: white;
+    background-color: #E06733;
+    transition: 0.5s
+}
+
+.correction_p.activeBtn{
+    color: white;
+    background-color: #E06733;
+    transition: 0.5s
+}
+
+.correction_l.activeBtn{
+    color: white;
+    background-color: #E06733;
+    transition: 0.5s
+}
+
 .btn {
     border: 2px solid #E06733;
     border-radius: 10px;
@@ -54,6 +93,12 @@ a.active{
     text-transform: uppercase;
     margin-top: 40px;
     transition: 0.5s;
+}
+
+.activeBtn{
+    color: white;
+    background-color: #E06733;
+    transition: 0.5s
 }
 
 
@@ -601,12 +646,11 @@ html {
     gap: 47px;
 }
 
-/*
+
 .service_card{
-    border: 1px solid #ff0000;   TO DO Border
-    border-radius: 20px;
+    transition: 0.5s;
 }
-*/
+
 
 .service_cards-block {
     display: flex;

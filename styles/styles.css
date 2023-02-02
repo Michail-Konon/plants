@@ -876,7 +876,8 @@ html {
     border-radius: 20px;
     gap: 30px;
     width: 331px;
-    height: 282px;
+    /*height: 282px;*/
+    padding: 31px 0;
     justify-content: center;
     align-items: center;
 }
@@ -895,6 +896,7 @@ html {
 .prices_ico {
     margin-right: 40px;
     margin-top: 2px;
+    cursor: pointer;
 }
 
 .prices_block-title{
@@ -921,10 +923,8 @@ html {
 }
 
 .prices_dropdown-btn {
-    background-color: #EDF2EC;
     width: 250px;
     height: 50px;
-    border: 1px solid #EDF2EC;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -934,6 +934,93 @@ html {
 .small_leaves{
     margin: 35px -10px 1px;
 }
+
+/*Price select start */
+
+/*TO DO: .prices_dropdown-btn(изменить бордер) .prices_dropdown-btn(убрать фиксированную высоту)*/
+
+.prices_dropdown-content.opened {
+    display: block;
+}
+
+.tap{
+    transition: 0.5s;
+    transform: rotateZ(180deg);
+    filter: invert(94%) sepia(9%) saturate(1226%) hue-rotate(32deg) brightness(360%) contrast(57%);
+}
+
+.prices_arrow{
+    transition: 0.5s;
+}
+
+.prices_arrow.tap{
+    transition: 0.5s;
+
+}
+
+.opened{
+    transition: 0.5s;
+}
+
+.dropdown-wrapper{
+    background-color: #EDF2EC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    width: 250px;
+}
+
+.prices_dropdown-content {
+    padding: 0px 40px 20px 40px;
+    display: none;
+    transition: 0.5s;
+}
+
+.content_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 10px;
+    color: #717171;
+    border-top: 1px solid #a5a5a5;
+    padding-top: 10px;
+    margin-top: 0px;
+}
+
+.content_price{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.content_price-highlight{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #E06733;    
+}
+
+.content_btn {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #717171;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    padding: 3px 20px;
+}
+
+/*Price select end */
 
 @media (max-width: 1300px) {
     .prices-wrapper {
@@ -1047,6 +1134,7 @@ html {
     .prices_ico {
         margin-right: 39px;
         margin-top: 7px;
+        transition: 0.5s;
     }
 
     .prices_block-title {

@@ -34,7 +34,7 @@ const btnPlant = document.getElementById('plantBtn');
 const cardGarden = document.querySelectorAll('.garden');
 const cardLawn = document.querySelectorAll('.lawn');
 const cardPlant = document.querySelectorAll('.plant');
-
+// TO DO: найти способ свернуть эти три IF`а в один
 if (btnGarden) {
   btnGarden.addEventListener('click', (e) => {
     btnPress(btnGarden, cardGarden);
@@ -79,26 +79,72 @@ function btnPress(btn, cls) {                 // наверняка эту фу�
 }
 
 let isVirgin = true; // девственница ли функция(первый ли это её вызов)
-
-function allBlur() {  // сново громоздко, надо найти способ упростить блюр до одной строки(массив карточек не сработал)
+// TO DO: найти способ упростить блюр до одной строки(массив карточек через forEach не сработал)
+function allBlur() { 
   if( isVirgin == true ) {                                       // если да, то идем на хитрость
     cardGarden.forEach((el) => el.classList.toggle('blur'));    //  и пока никто не видит блюрим ВСЕ карточки
     cardLawn.forEach((el) => el.classList.toggle('blur'));     //  а функция выше снимет с нужных
     cardPlant.forEach((el) => el.classList.toggle('blur'));
-    console.log('she is virgin')
     return isVirgin = false
   };
   if( isVirgin == false) {                 // если уже вызывалась, то забиваем на неё, 
-    console.log('Not virgin enymore')     //  потому как блюрить все болье не нужно
+    void(0)                               //  потому как блюрить все больше не нужно
   }
   if( setVault.size == 0 && isVirgin == false) {                // если отжали все кнопки(освободили хранилище)
     cardGarden.forEach((el) => el.classList.toggle('blur'));   // снова идем на хитрость и снимаем блюр со всех карточек
     cardLawn.forEach((el) => el.classList.toggle('blur'));    //  и делаем её девственной(возврат в первоначальное состояние)
     cardPlant.forEach((el) => el.classList.toggle('blur'));
-    console.log('Time to become a virgin');
     return isVirgin = true
   }
 }
 
 // Prices Unique selection
+
+const btnBasic = document.getElementById('basic');
+const btnStand = document.getElementById('standart');
+const btnProcare = document.getElementById('procare');
+
+const selectBasic = document.getElementById('basicContent')
+const selectStand = document.getElementById('standContent')
+const selectProcare = document.getElementById('proContent')
+
+if (btnBasic) {
+  btnBasic.addEventListener('click', (e) => {
+    closeOpen(selectBasic, btnBasic);
+    });
+}
+
+if (btnStand) {
+  btnStand.addEventListener('click', (e) => {
+    closeOpen(selectStand, btnStand);
+    });
+}
+
+if (btnProcare) {
+  btnProcare.addEventListener('click', (e) => {
+    closeOpen(selectProcare, btnProcare);
+    });
+}
+
+let arrVault = [];
+
+function closeOpen(content, btn) {
+  if (arrVault.length == 2) {
+    if (arrVault[0] == content ) {
+      content.classList.toggle('opened');
+      btn.classList.toggle('tap');
+      return arrVault = []
+    } else { 
+      arrVault[0].classList.toggle('opened');
+      arrVault[1].classList.toggle('tap');
+      content.classList.toggle('opened');
+      btn.classList.toggle('tap');
+      return arrVault = [content, btn]
+    }
+  } else {
+    content.classList.toggle('opened');
+    btn.classList.toggle('tap');
+    return arrVault = [...arguments];
+  }
+}
 

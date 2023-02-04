@@ -11,6 +11,27 @@ font-family: 'Inika', serif;
 font-family: 'Inter', sans-serif;
 */
 
+/*Blur control start */
+
+.garden{
+    
+}
+
+.lawn{
+
+}
+
+.plant{
+
+}
+
+.blur{
+    filter: blur(5px);
+    transition: 0.5s;
+}
+
+/*Blur control end*/
+
 a:link{
     text-decoration: none;
     color: black;
@@ -40,6 +61,24 @@ a.active{
     max-width: 1440px;
 }
 
+.correction_g.activeBtn{
+    color: white;
+    background-color: #E06733;
+    transition: 0.5s
+}
+
+.correction_p.activeBtn{
+    color: white;
+    background-color: #E06733;
+    transition: 0.5s
+}
+
+.correction_l.activeBtn{
+    color: white;
+    background-color: #E06733;
+    transition: 0.5s
+}
+
 .btn {
     border: 2px solid #E06733;
     border-radius: 10px;
@@ -54,6 +93,12 @@ a.active{
     text-transform: uppercase;
     margin-top: 40px;
     transition: 0.5s;
+}
+
+.activeBtn{
+    color: white;
+    background-color: #E06733;
+    transition: 0.5s
 }
 
 
@@ -601,12 +646,11 @@ html {
     gap: 47px;
 }
 
-/*
+
 .service_card{
-    border: 1px solid #ff0000;   TO DO Border
-    border-radius: 20px;
+    transition: 0.5s;
 }
-*/
+
 
 .service_cards-block {
     display: flex;
@@ -832,7 +876,8 @@ html {
     border-radius: 20px;
     gap: 30px;
     width: 331px;
-    height: 282px;
+    /*height: 282px;*/
+    padding: 31px 0;
     justify-content: center;
     align-items: center;
 }
@@ -851,6 +896,7 @@ html {
 .prices_ico {
     margin-right: 40px;
     margin-top: 2px;
+    cursor: pointer;
 }
 
 .prices_block-title{
@@ -877,10 +923,8 @@ html {
 }
 
 .prices_dropdown-btn {
-    background-color: #EDF2EC;
     width: 250px;
     height: 50px;
-    border: 1px solid #EDF2EC;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -890,6 +934,109 @@ html {
 .small_leaves{
     margin: 35px -10px 1px;
 }
+
+/*Price select start */
+
+/*TO DO: .prices_dropdown-btn(изменить бордер) .prices_dropdown-btn(убрать фиксированную высоту)*/
+
+.prices_dropdown-content.opened {
+    display: block;
+}
+
+.tap{
+    transition: 0.5s;
+    transform: rotateZ(180deg);
+    filter: invert(94%) sepia(9%) saturate(1226%) hue-rotate(32deg) brightness(360%) contrast(57%);
+}
+
+.prices_arrow{
+    transition: 0.5s;
+}
+
+.prices_arrow.tap{
+    transition: 0.5s;
+
+}
+
+.opened{
+    transition: 0.5s;
+}
+
+.dropdown-wrapper{
+    background-color: #EDF2EC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    width: 250px;
+    transition: 0.35s;
+}
+
+.dropdown-wrapper:hover {
+    background-color: #D6E7D2;
+    transition: 0.35s;
+}
+
+.prices_dropdown-content {
+    padding: 0px 40px 10px 40px;
+    display: none;
+    transition: 0.5s;
+}
+
+.content_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 10px;
+    color: #717171;
+    border-top: 1px solid #a5a5a5;
+    padding-top: 6px;
+    margin-top: -6px;
+    margin-bottom: 6px;
+}
+
+.content_price{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.content_price-highlight{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #E06733;    
+}
+
+.content_btn {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #717171;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    padding: 3px 25px 3px 20px;
+    cursor: pointer;
+    margin-top: 7px;
+    transition: 0.5s;
+}
+
+.content_btn:hover {
+    color: white;
+    background-color: #636060;
+    transition: 0.5s;
+}
+
+/*Price select end */
 
 @media (max-width: 1300px) {
     .prices-wrapper {
@@ -1003,6 +1150,7 @@ html {
     .prices_ico {
         margin-right: 39px;
         margin-top: 7px;
+        transition: 0.5s;
     }
 
     .prices_block-title {
@@ -1027,6 +1175,101 @@ html {
 }
 
 /*Contacts sec*/
+
+/*Contacts select menu Start*/
+
+.openned-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.openned-button {
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    padding: 5px 45px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    color: #717171;
+}
+
+.openned-button:hover {
+    background-color: #E06733;
+    color: white;
+}
+
+
+.openned-text {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+}
+
+.contacts_menu-openned {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 16px 40px 32px;
+    width: 100%;
+    max-width: 370px;
+}
+
+.openned-first {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #000000;    
+}
+
+.openned-second {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #717171;    
+}
+
+.first-item {
+    margin: 0px auto;
+}
+
+.second-item {
+    margin: 0px auto;
+}
+
+.contacts_menu-select.main-sub.main-prime {
+    display: block;
+}
+
+.contacts_menu-select.main-sub {
+    display: none;
+}
+
+.ico_invert.tap {
+    transition: 0.5s;
+    filter: invert(94%) sepia(9%) saturate(1226%) hue-rotate(32deg) brightness(360%) contrast(57%);
+}
+
+.item-wrapper {
+    transition: 0.25s;
+}
+
+.item-wrapper:hover {
+    background-color: #C1E698;
+    transition: 0.25s;
+}
+
+/*Contacts select menu End*/
 
 .contacts{
     background: #EDF2EC;
@@ -1064,33 +1307,59 @@ html {
     font-weight: 400;
     font-size: 20px;
     line-height: 40px;
-    align-self: center;
+    align-self: flex-start;
     letter-spacing: 0.05em;
     color: #717171;
     width: 450px;
-    height: 50px;
-    background-color: #D6E7D2;
+    /* height: 50px; */
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 260px;
-    box-shadow:  #717171;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 9px;
+    position: relative;
+    flex-direction: column;
+    margin-top: 90px;
+    gap: 40px;
 }
 
-.contacts_menu-select{
-    margin-left: 20px;
+.contacts_menu-wrapper {
+    width: 100%;
+    box-shadow: #717171;
+    background-color: #D6E7D2;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.contacts_menu-select {
+    margin-left: 50px;
+    display: flex;
+    align-self: baseline;
+    margin: 10px 10px 10px 40px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.contacts_menu-select-main {
+    margin-left: 50px;
+    display: flex;
+    align-self: baseline;
+    margin: 10px 10px 10px 40px;
+    user-select: none;
 }
 
 .contacts_ico {
-    margin-right: 34px;
-    margin-top: 3px;
+    position: absolute;
+    margin-right: 5px;
+    margin-top: 0px;
+    top: 8px;
+    right: 10px;
 }
 
 .ico_invert{
     -webkit-filter: invert(20%); /* safari 6.0 - 9.0 */
     filter: invert(20%);
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 @media (max-width: 1300px) {

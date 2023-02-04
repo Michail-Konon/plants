@@ -148,3 +148,86 @@ function closeOpen(content, btn) {
   }
 }
 
+// Contacts custom select
+
+const arrowBtn = document.querySelector('.ico_invert');
+
+const textNode = document.querySelector('.contacts_menu-select-main')
+
+const optNone = document.getElementById('none');
+const optFirst = document.getElementById('first');
+const optSecond = document.getElementById('second');
+const optThird = document.getElementById('third');
+const optFourth = document.getElementById('fourth');
+
+const cardFirst = document.getElementById('cardOne');
+const cardSecond = document.getElementById('cardTwo');
+const cardThird = document.getElementById('cardThree');
+const cardFourth = document.getElementById('cardFour');
+
+const items = document.querySelectorAll('.contacts_menu-select')
+// TO DO: найти способ сворачивать обработчики событий в одну фунцию а не в пять болков IF
+if(arrowBtn) {
+  arrowBtn.addEventListener('click', (e) => {
+    arrowBtn.classList.toggle('tap');
+    items.forEach((el) => el.classList.toggle('main-sub'));
+  })
+};
+
+if(optNone) {
+  optNone.addEventListener('click', (e) => {
+    selectTap('City', 'none');
+  })
+}
+
+if(optFirst) {
+  optFirst.addEventListener('click', (e) => {
+    selectTap('Canandaigua, NY', cardFirst);
+  })
+}
+
+if(optSecond) {
+  optSecond.addEventListener('click', (e) => {
+    selectTap('New York City', cardSecond);
+  })
+}
+
+if(optThird) {
+  optThird.addEventListener('click', (e) => {
+    selectTap('Yonkers, NY', cardThird);
+  })
+}
+
+if(optFourth) {
+  optFourth.addEventListener('click', (e) => {
+    selectTap('Sherrill, NY', cardFourth)
+  })
+}
+
+let activeSelect = [];
+
+function selectTap(text, card) {
+  arrowBtn.classList.toggle('tap');
+  items.forEach((el) => el.classList.toggle('main-sub'));
+  textNode.textContent = text;
+  if(card == 'none') {
+    if(activeSelect.length == 1) {
+      activeSelect[0].classList.toggle('hide');
+      return activeSelect = []
+    } else {
+    }
+  } else {
+    if (activeSelect.length == 1) {
+      if (activeSelect[0] == card ) {
+        return void(0)
+      } else { 
+        activeSelect[0].classList.toggle('hide');
+        card.classList.toggle('hide');
+        return activeSelect = [card]
+      }
+    } else {
+      card.classList.toggle('hide');
+      return activeSelect = [card];
+    }
+  }
+}
